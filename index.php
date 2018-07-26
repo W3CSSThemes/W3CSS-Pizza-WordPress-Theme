@@ -12,7 +12,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 .bgimg {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("images/pizza.jpg");
+    background-image: url("<?php echo get_template_directory_uri(); ?>/images/pizza.jpg");
     min-height: 90%;
 }
 </style>
@@ -125,9 +125,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   <div class="w3-content">
     <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
     <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p><strong>The Chef?</strong> Mr. Italiano himself<img src="images/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p><strong>The Chef?</strong> Mr. Italiano himself<img src="<?php echo get_template_directory_uri(); ?>/images/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
     <p>We are proud of our interiors.</p>
-    <img src="images/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
     <h1><b>Opening Hours</b></h1>
     
     <div class="w3-row">
@@ -204,7 +204,7 @@ function openMenu(evt, menuName) {
 }
 document.getElementById("myLink").click();
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
